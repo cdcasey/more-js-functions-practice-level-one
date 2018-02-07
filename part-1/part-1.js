@@ -28,3 +28,14 @@ console.log(discountPercentage(50,5));
 console.log(discountPercentage(100,10));
 console.log(discountPercentage(100,101));
 console.log(discountPercentage(100,-1));
+
+// stringCapitalize
+function stringCapitalize(stringOfWords) {
+    let wordArray = stringOfWords.split(' ');
+    for (let word in wordArray) {
+        wordArray[word] = wordArray[word][0].toUpperCase() + wordArray[word].slice(1);
+    }
+    return wordArray.join(' ');
+}
+
+console.log(stringCapitalize("The quick brown fox jumped over the lazy dog"));
