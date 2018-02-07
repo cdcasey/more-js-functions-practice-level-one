@@ -39,3 +39,16 @@ function stringCapitalize(stringOfWords) {
 }
 
 console.log(stringCapitalize("The quick brown fox jumped over the lazy dog"));
+
+//  Define a function called `evenNumbers` that takes a random integer, from 0 to 100, and outputs all the even integers from 0 to that random number.
+function evenNumbers(number) {
+    let evenArray = [];
+    for (let i = 0; i <= number; i++) {
+        if (i % 2 == 0) {
+            evenArray.push(i);
+        }
+    }
+    return evenArray
+}
+
+console.log(evenNumbers(Math.floor(Math.random() * 101)));
