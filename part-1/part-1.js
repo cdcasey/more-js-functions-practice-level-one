@@ -1,13 +1,13 @@
 // write your functions hereww
 
-// sum
+// Define a function called `sum` that takes two numbers as arguments and returns their sum.
 function sum(num1, num2) {
     return num1 + num2;
 }
 
 console.log(sum(3,4));
 
-// isEqual
+// Define a function called `isEqual` that takes two arguments and returns a boolean. Return true if the two arguments are equal and return false if they are not.
 function isEqual(term1, term2) {
     return term1 === term2;
 }
@@ -15,7 +15,7 @@ function isEqual(term1, term2) {
 console.log(isEqual(3,4));
 console.log(isEqual(3,3));
 
-// discountPercentage
+// Define a function called `discountPercentage` that returns the total discount ($), given the original amount and discount percentage (as arguments). Return a warning if the discount amount is greater than 100 or less that 0 percent.
 function discountPercentage(amount, discount) {
     if (discount > 100 || discount < 0) {
         return "Invalid discount percentage";
@@ -29,7 +29,7 @@ console.log(discountPercentage(100,10));
 console.log(discountPercentage(100,101));
 console.log(discountPercentage(100,-1));
 
-// stringCapitalize
+// Define a function called `stringCapitalize` that takes a string as an argument and returns the same string with the first letter of each word capitalized. Assume that each individual word is separated by only one space.
 function stringCapitalize(stringOfWords) {
     let wordArray = stringOfWords.split(' ');
     for (let word in wordArray) {
