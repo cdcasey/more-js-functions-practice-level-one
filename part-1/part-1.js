@@ -52,3 +52,11 @@ function evenNumbers(number) {
 }
 
 console.log(evenNumbers(Math.floor(Math.random() * 101)));
+
+// Define a function called `isDivisible` that takes two arguments and returns a boolean. Return true if the first argument is divisible by the second; otherwise, return false.
+function isDivisible(num1, num2) {
+    return num1 % num2 === 0;
+}
+
+console.log(isDivisible(3,4));
+console.log(isDivisible(3,3));
