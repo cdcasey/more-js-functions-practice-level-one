@@ -60,3 +60,23 @@ function isDivisible(num1, num2) {
 
 console.log(isDivisible(3,4));
 console.log(isDivisible(3,3));
+
+// **Bonus**: Write a function called `oddNumbers` that takes a random integer, from 0 to 100. If the number is greater than 40 then output all the odd integers from 40 to the random number. If the number is less than 40, output all the odd integers from 0 to 40.
+function oddNumbers(number) {
+    let oddArray = [];
+    if (number < 40) {
+        for (let i = 0; i <= 40; i++) {
+            if (i % 2 !== 0) {
+                oddArray.push(i);
+            }
+        }
+    } else for (let i = 40; i <= number; i++) {
+        if (i % 2 !== 0) {
+            oddArray.push(i);
+        }
+    }
+
+    return oddArray
+}
+
+console.log(oddNumbers(Math.floor(Math.random() * 101)));
