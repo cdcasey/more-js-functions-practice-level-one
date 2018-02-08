@@ -16,6 +16,18 @@ function oldestPerson(people) {
 console.log(oldestPerson({'Chuck': 22, 'Brian': 46}));
 
 // Define a function called `longestWord` that takes a string and returns the longest word in the string.
+function longestWord(aString) {
+    let wordArray = aString.split(' ');
+    let longest = '';
+    for (let i in wordArray) {
+        if (wordArray[i].length > longest.length) {
+            longest = wordArray[i];
+        }
+    }
+    return longest;
+}
+
+console.log(longestWord("The quick brown fox jumped over the lazy dog"));
 
 // Refactor the `longestWord` function so that it ignores punctuation.
 
