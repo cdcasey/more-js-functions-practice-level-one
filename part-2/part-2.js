@@ -30,6 +30,20 @@ function longestWord(aString) {
 console.log(longestWord("The quick brown fox jumped over the lazy dog"));
 
 // Refactor the `longestWord` function so that it ignores punctuation.
+function longestWordNoPunct(aString) {
+    aString = aString.replace(/[^\w\s]/g, '');
+    let wordArray = aString.split(' ');
+    let longest = '';
+    for (let i in wordArray) {
+        if (wordArray[i].length > longest.length) {
+            longest = wordArray[i];
+        }
+    }
+    return longest;
+}
+
+console.log(longestWord("The quick brown fox jumped over;.!, the lazy dog"));
+console.log(longestWordNoPunct("The quick brown fox jumped over.!, the lazy dog"));
 
 // Define a function called `factorial` that takes a random number as an argument and then returns the factorial of that given number.
 
