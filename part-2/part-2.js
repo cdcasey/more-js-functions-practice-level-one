@@ -60,3 +60,15 @@ console.log(factorial(1));
 console.log(factorial(6));
 
 // **Bonus**: Write a function called `palindrome` that takes a string as an argument and returns the string in reversed order. Return true if the string is the same as the reversed string, otherwise return false.
+function palindrome(aString) {
+    aString = aString.replace(' ', '');
+    let reversedString = '';
+    for (let i=aString.length-1; i >= 0; i--) {
+        reversedString += aString[i];
+    }
+    return aString === reversedString;
+}
+
+console.log(palindrome('hello'));
+console.log(palindrome('radar'));
+console.log(palindrome('taco cat'));
